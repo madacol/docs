@@ -21,6 +21,12 @@ Install Tor on both client and server:
         HiddenServiceDir /var/lib/tor/ssh/
         HiddenServicePort 22
 
+    Optional extra configurations (trade-off anonimity for better performance)
+
+        SocksPort 0
+        HiddenServiceNonAnonymousMode 1
+        HiddenServiceSingleHopMode 1
+
     <kbd>Ctrl</kbd>+<kbd>x</kbd> to save and close file.
 
 3. Restart Tor:
